@@ -1,0 +1,6 @@
+[book]
+authors = ["init: OpusCommunity"]
+language = "ja"
+multilingual = false
+src = "src"
+title = "Opus Documentation"
