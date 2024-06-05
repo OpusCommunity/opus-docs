@@ -1,0 +1,13 @@
+version: "3.8"
+
+name: opus-book
+
+services:
+  devcontainer:
+    build:
+      context: ./..
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - ./..:/repository
+    # VSCode needs a second to be able to attach to the container
+    command: /bin/sh -c "while sleep 1000; do :; done"
